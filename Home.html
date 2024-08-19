@@ -83,46 +83,38 @@
         <p class="text-lg leading-relaxed text-gray-700 mb-4">Découvrez nos offres personnalisées pour améliorer vos compétences en prise de parole.</p>
         <button onclick="togglePricing()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Plus de détails</button>
 
-        <!-- Grille Tarifaire -->
-        <div id="pricing-table" class="mt-8 hidden">
+        <!-- Cartes Tarifaires -->
+        <div id="pricing-cards" class="mt-8 hidden">
             <h3 class="text-2xl font-bold mb-6 text-blue-500">Tarification pour les sessions individuelles</h3>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-gray-100 rounded-lg shadow-md">
-                    <thead>
-                        <tr class="bg-blue-500 text-white">
-                            <th class="py-3 px-2 md:px-6 text-left">Type de session</th>
-                            <th class="py-3 px-2 md:px-6 text-left">Durée</th>
-                            <th class="py-3 px-2 md:px-6 text-left">Tarif</th>
-                            <th class="py-3 px-2 md:px-6 text-left">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-b border-gray-200">
-                            <td class="py-4 px-2 md:px-6">Session Découverte</td>
-                            <td class="py-4 px-2 md:px-6">30 minutes</td>
-                            <td class="py-4 px-2 md:px-6">Gratuit</td>
-                            <td class="py-4 px-2 md:px-6">Évaluation des besoins.</td>
-                        </tr>
-                        <tr class="border-b border-gray-200">
-                            <td class="py-4 px-2 md:px-6">Coaching Vocal & Gestion du Trac</td>
-                            <td class="py-4 px-2 md:px-6">6 heures</td>
-                            <td class="py-4 px-2 md:px-6">50 000 Fr CFA</td>
-                            <td class="py-4 px-2 md:px-6">Techniques pour améliorer la voix, réduire le trac et gagner en confiance.</td>
-                        </tr>
-                        <tr class="border-b border-gray-200">
-                            <td class="py-4 px-2 md:px-6">Prise de Parole Impactante</td>
-                            <td class="py-4 px-2 md:px-6">5 heures</td>
-                            <td class="py-4 px-2 md:px-6">80 000 Fr CFA</td>
-                            <td class="py-4 px-2 md:px-6">Développement d'un discours percutant et captivant.</td>
-                        </tr>
-                        <tr>
-                            <td class="py-4 px-2 md:px-6">Programme Complet</td>
-                            <td class="py-4 px-2 md:px-6">14 heures</td>
-                            <td class="py-4 px-2 md:px-6">150 000 Fr CFA</td>
-                            <td class="py-4 px-2 md:px-6">Accompagnement global : de la structure du discours à la maîtrise de la scène.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Carte 1: Session Découverte -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h4 class="text-xl font-bold text-blue-500 mb-2">Session Découverte</h4>
+                    <p class="text-gray-700 mb-2">Durée : 30 minutes</p>
+                    <p class="text-gray-700 font-bold mb-4">Tarif : Gratuit</p>
+                    <p class="text-gray-600">Évaluation des besoins.</p>
+                </div>
+                <!-- Carte 2: Coaching Vocal & Gestion du Trac -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h4 class="text-xl font-bold text-blue-500 mb-2">Coaching Vocal & Gestion du Trac</h4>
+                    <p class="text-gray-700 mb-2">Durée : 6 heures</p>
+                    <p class="text-gray-700 font-bold mb-4">Tarif : 50 000 Fr CFA</p>
+                    <p class="text-gray-600">Techniques pour améliorer la voix, réduire le trac et gagner en confiance.</p>
+                </div>
+                <!-- Carte 3: Prise de Parole Impactante -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h4 class="text-xl font-bold text-blue-500 mb-2">Prise de Parole Impactante</h4>
+                    <p class="text-gray-700 mb-2">Durée : 5 heures</p>
+                    <p class="text-gray-700 font-bold mb-4">Tarif : 80 000 Fr CFA</p>
+                    <p class="text-gray-600">Développement d'un discours percutant et captivant.</p>
+                </div>
+                <!-- Carte 4: Programme Complet -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h4 class="text-xl font-bold text-blue-500 mb-2">Programme Complet</h4>
+                    <p class="text-gray-700 mb-2">Durée : 14 heures</p>
+                    <p class="text-gray-700 font-bold mb-4">Tarif : 150 000 Fr CFA</p>
+                    <p class="text-gray-600">Accompagnement global : de la structure du discours à la maîtrise de la scène.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -130,9 +122,9 @@
 
 <script>
     function togglePricing() {
-        const pricingTable = document.getElementById('pricing-table');
-        pricingTable.classList.toggle('hidden');
-        pricingTable.scrollIntoView({ behavior: 'smooth' });
+        const pricingCards = document.getElementById('pricing-cards');
+        pricingCards.classList.toggle('hidden');
+        pricingCards.scrollIntoView({ behavior: 'smooth' });
     }
 </script>
 
