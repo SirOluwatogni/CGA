@@ -42,39 +42,104 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">À Propos</h2>
-            <div class="max-w-3xl mx-auto text-center">
+<section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">À Propos</h2>
+        <div class="max-w-3xl mx-auto flex items-center">
+            <!-- Photo de Gérard Adjobo alignée à gauche -->
+            <div class="mr-8">
+                <img src="sirG.jpg" alt="Photo de Gérard Adjobo" class="rounded-full w-48 h-48 object-cover">
+            </div>
+            <!-- Texte aligné à droite -->
+            <div>
                 <p>Je suis Gérard Adjobo, coach en art oratoire et éloquence. Avec dix années d'expérience, j'aide les professionnels à maîtriser leur voix et à captiver leur audience. Ma mission est de transformer vos appréhensions en confiance et votre voix en un outil puissant de communication.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Modules de Formation Section -->
-    <section id="modules" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Modules de Formation</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Coaching Vocal</h3>
-                    <p>Apprenez les techniques pour améliorer votre voix et captiver votre auditoire.</p>
+<section id="modules" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Modules de Formation</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <div class="flex justify-center mb-4">
+                    <img src="Coachingvocal.jpg" alt="Coaching Vocal" class="w-16 h-16 rounded-full object-cover">
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Gestion du Trac</h3>
-                    <p>Surmontez la peur de parler en public et transformez votre trac en énergie positive.</p>
+                <h3 class="text-2xl font-bold mb-4">Coaching Vocal</h3>
+                <p>Apprenez les techniques pour améliorer votre voix et captiver votre auditoire.</p>
+                <button onclick="openPopup('popup1')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Découvrir</button>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <div class="flex justify-center mb-4">
+                    <img src="Gestiondutrac.jpg" alt="Gestion du Trac" class="w-16 h-16 rounded-full object-cover">
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Prise de Parole Impactante</h3>
-                    <p>Développez un discours structuré et percutant qui engage votre audience.</p>
+                <h3 class="text-2xl font-bold mb-4">Gestion du Trac</h3>
+                <p>Surmontez la peur de parler en public et transformez votre trac en énergie positive.</p>
+                <button onclick="openPopup('popup2')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Découvrir</button>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <div class="flex justify-center mb-4">
+                    <img src="ParoleImpactante.jpg" alt="Prise de Parole Impactante" class="w-16 h-16 rounded-full object-cover">
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Programme Complet</h3>
-                    <p>Un accompagnement global pour devenir un orateur confirmé, de la voix à la scène.</p>
+                <h3 class="text-2xl font-bold mb-4">Prise de Parole Impactante</h3>
+                <p>Développez un discours structuré et percutant qui engage votre audience.</p>
+                <button onclick="openPopup('popup3')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Découvrir</button>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <div class="flex justify-center mb-4">
+                    <img src="Programmecomplet.jpg" alt="Programme Complet" class="w-16 h-16 rounded-full object-cover">
                 </div>
+                <h3 class="text-2xl font-bold mb-4">Programme Complet</h3>
+                <p>Un accompagnement global pour devenir un orateur confirmé, de la voix à la scène.</p>
+                <button onclick="openPopup('popup4')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Découvrir</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Pop-up Modals -->
+<div id="popup1" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg">
+        <h3 class="text-xl font-bold mb-4">Coaching Vocal</h3>
+        <p>Ce module vous guide pour découvrir la puissance de votre voix, avec des techniques pour améliorer votre diction, votre projection vocale, et captiver votre public</p>
+        <button onclick="closePopup('popup1')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Fermer</button>
+    </div>
+</div>
+
+<div id="popup2" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg">
+        <h3 class="text-xl font-bold mb-4">Gestion du Trac</h3>
+        <p>Ce module vous aide à transformer la peur en énergie positive, avec des techniques pour calmer vos nerfs et parler avec assurance devant un public.</p>
+        <button onclick="closePopup('popup2')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Fermer</button>
+    </div>
+</div>
+
+<div id="popup3" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg">
+        <h3 class="text-xl font-bold mb-4">Prise de Parole Impactante</h3>
+        <p>Dans ce module, apprenez à structurer vos idées et à livrer un discours percutant qui retient l'attention de votre audience.</p>
+        <button onclick="closePopup('popup3')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Fermer</button>
+    </div>
+</div>
+
+<div id="popup4" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg">
+        <h3 class="text-xl font-bold mb-4">Programme Complet</h3>
+        <p>Le programme complet couvre tous les aspects de la prise de parole, de la gestion du trac à la maîtrise de la voix et la scène, pour devenir un orateur accompli.</p>
+        <button onclick="closePopup('popup4')" class="mt-4 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Fermer</button>
+    </div>
+</div>
+
+<script>
+    function openPopup(id) {
+        document.getElementById(id).classList.remove('hidden');
+    }
+    function closePopup(id) {
+        document.getElementById(id).classList.add('hidden');
+    }
+</script>
 
     <!-- One-to-One Coaching Section -->
 <section id="one-to-one" class="py-16 bg-gray-100">
@@ -182,15 +247,44 @@
 
 
     <!-- Témoignages Section -->
-    <section id="testimonials" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Témoignages</h2>
-            <div class="max-w-3xl mx-auto text-center">
-                <p>"Seun m'a aidé à transformer ma peur en confiance. Je recommande vivement ses sessions de coaching vocal !"</p>
-                <p class="mt-4">- Jean Dupont</p>
+<section id="testimonials" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Témoignages</h2>
+        <div id="testimonial-container" class="flex justify-center space-x-8">
+            <div class="testimonial-item max-w-lg text-center">
+                <p>"Gérard m'a aidé à transformer ma peur en confiance. Je recommande vivement ses sessions de coaching vocal !"</p>
+                <p class="mt-4">- Mondukpè Déborah</p>
+            </div>
+            <div class="testimonial-item max-w-lg text-center">
+                <p>"Le coaching vocal avec Gérard a été une révélation. J'ai maintenant confiance en mes capacités."</p>
+                <p class="mt-4">- Mouhamed Samba</p>
+            </div>
+            <div class="testimonial-item max-w-lg text-center hidden">
+                <p>"Grâce à Gérard, j'ai réussi à captiver mon audience comme jamais auparavant."</p>
+                <p class="mt-4">- Alain Roger</p>
+            </div>
+            <div class="testimonial-item max-w-lg text-center hidden">
+                <p>"Les sessions avec Gérard ont totalement changé ma façon de m'exprimer en public."</p>
+                <p class="mt-4">- Martial Rosmino</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    const testimonials = document.querySelectorAll('.testimonial-item');
+    let currentIndex = 0;
+
+    setInterval(() => {
+        testimonials.forEach((item, index) => {
+            item.classList.add('hidden');
+            if (index === currentIndex || index === (currentIndex + 1) % testimonials.length) {
+                item.classList.remove('hidden');
+            }
+        });
+        currentIndex = (currentIndex + 2) % testimonials.length;
+    }, 5000); // Change every 5 seconds
+</script>
 
     <!-- Contact Section -->
 <section id="contact" class="py-16 bg-gray-100">
