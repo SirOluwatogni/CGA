@@ -9,26 +9,29 @@
 <body class="font-sans antialiased text-gray-900 bg-gray-100">
 
     <!-- Navigation -->
-    <nav class="bg-white shadow fixed w-full z-10">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<nav class="bg-white shadow fixed w-full z-10">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="cga_logo.png" alt="Logo CGA" class="w-8 h-8 mr-2">
             <div class="text-2xl font-bold">C.G.A</div>
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="#home" class="hover:text-indigo-600">Accueil</a></li>
-                <li><a href="#about" class="hover:text-indigo-600">À Propos</a></li>
-                <li><a href="#modules" class="hover:text-indigo-600">Modules de Formation</a></li>
-                <li><a href="#coaching" class="hover:text-indigo-600">One-to-One Coaching</a></li>
-                <li><a href="#resources" class="hover:text-indigo-600">Ressources</a></li>
-                <li><a href="#events" class="hover:text-indigo-600">Événements & Ateliers</a></li>
-                <li><a href="#testimonials" class="hover:text-indigo-600">Témoignages</a></li>
-                <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
-            </ul>
-            <button class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
         </div>
-    </nav>
+        <ul class="hidden md:flex space-x-8">
+            <li><a href="#home" class="hover:text-indigo-600">Accueil</a></li>
+            <li><a href="#about" class="hover:text-indigo-600">À Propos</a></li>
+            <li><a href="#modules" class="hover:text-indigo-600">Modules de Formation</a></li>
+            <li><a href="#coaching" class="hover:text-indigo-600">One-to-One Coaching</a></li>
+            <li><a href="#resources" class="hover:text-indigo-600">Ressources</a></li>
+            <li><a href="#events" class="hover:text-indigo-600">Événements & Ateliers</a></li>
+            <li><a href="#testimonials" class="hover:text-indigo-600">Témoignages</a></li>
+            <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+        </ul>
+        <button class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+</nav>
 
     <!-- Home Section -->
     <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('https://images.squarespace-cdn.com/content/v1/590cc57ebe659408c68d77fd/1526321543894-VVKY784KPUC8DKOMMQBQ/Launch%2BHeaderOption2.jpg?format=2500w');">
@@ -50,8 +53,12 @@
             <div class="mr-8">
                 <img src="sirG.jpg" alt="Photo de Gérard Adjobo" class="rounded-full w-48 h-48 object-cover">
             </div>
-            <!-- Texte aligné à droite -->
-            <div>
+            <!-- Logo au centre -->
+            <div class="mx-8">
+                <img src="cga_logo.png" alt="Logo CGA" class="w-48 h-48 object-contain">
+            </div>
+            <!-- Texte aligné à droite et justifié -->
+            <div class="flex-1 text-justify">
                 <p>Je suis Gérard Adjobo, coach en art oratoire et éloquence. Avec dix années d'expérience, j'aide les professionnels à maîtriser leur voix et à captiver leur audience. Ma mission est de transformer vos appréhensions en confiance et votre voix en un outil puissant de communication.</p>
             </div>
         </div>
