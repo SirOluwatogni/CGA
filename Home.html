@@ -34,15 +34,16 @@
 </nav>
 
     <!-- Home Section -->
-    <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('https://images.squarespace-cdn.com/content/v1/590cc57ebe659408c68d77fd/1526321543894-VVKY784KPUC8DKOMMQBQ/Launch%2BHeaderOption2.jpg?format=2500w');">
-        <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50">
-            <div class="text-center text-white">
-                <h1 class="text-4xl md:text-6xl font-bold">Transformez Votre Voix</h1>
+<section id="home" class="h-screen relative">
+    <img src="about.jpg" alt="Image de fond" class="absolute inset-0 w-full h-full object-cover">
+    <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50 relative">
+        <!-- Contenu à superposer sur l'image -->
+        <div class="text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold">Transformez Votre Voix</h1>
                 <p class="mt-4 text-lg md:text-2xl">Coaching vocal et prise de parole en public avec Coach Gérard Adjobo</p>
-                <a href="#about" class="mt-6 inline-block bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-700">En savoir plus</a>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
 <section id="about" class="py-16 bg-gray-100">
