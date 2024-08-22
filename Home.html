@@ -3,35 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CGA Formation et Coaching</title>
+    <title>Coaching Vocal</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans antialiased text-gray-900 bg-gray-100">
 
-    <!-- Navigation -->
-<nav class="bg-white shadow fixed w-full z-10">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <img src="cga_logo.png" alt="Logo CGA" class="w-8 h-8 mr-2">
-            <div class="text-2xl font-bold">C.G.A</div>
+    <!-- PopUp de Bienvenue -->
+    <div id="welcome-popup" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 class="text-2xl font-bold mb-4">Bienvenue</h2>
+            <p>Bienvenue sur l'espace du Coach Gérard ADJOBO.</p>
+            <!-- Ajout de l'image du logo -->
+            <div class="mt-4">
+                <img src="cga_logo.png" alt="Logo CGA" class="mx-auto w-24 h-24">
+            </div>
         </div>
-        <ul class="hidden md:flex space-x-8">
-            <li><a href="#home" class="hover:text-indigo-600">Accueil</a></li>
-            <li><a href="#about" class="hover:text-indigo-600">À Propos</a></li>
-            <li><a href="#modules" class="hover:text-indigo-600">Modules de Formation</a></li>
-            <li><a href="#coaching" class="hover:text-indigo-600">One-to-One Coaching</a></li>
-            <li><a href="#resources" class="hover:text-indigo-600">Ressources</a></li>
-            <li><a href="#events" class="hover:text-indigo-600">Événements & Ateliers</a></li>
-            <li><a href="#testimonials" class="hover:text-indigo-600">Témoignages</a></li>
-            <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
-        </ul>
-        <button class="md:hidden focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
     </div>
-</nav>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <img src="cga_logo.png" alt="Logo CGA" class="w-8 h-8 mr-2">
+                C.G.A
+            </div>
+            <ul id="nav-menu" class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-indigo-600">Accueil</a></li>
+                <li><a href="#about" class="hover:text-indigo-600">À Propos</a></li>
+                <li><a href="#modules" class="hover:text-indigo-600">Modules de Formation</a></li>
+                <li><a href="#coaching" class="hover:text-indigo-600">One-to-One Coaching</a></li>
+                <li><a href="#resources" class="hover:text-indigo-600">Ressources</a></li>
+                <li><a href="#events" class="hover:text-indigo-600">Événements & Ateliers</a></li>
+                <li><a href="#testimonials" class="hover:text-indigo-600">Témoignages</a></li>
+                <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+            </ul>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <script>
+        // Affichage du menu sur mobile
+        document.getElementById('menu-toggle').onclick = function() {
+            var navMenu = document.getElementById('nav-menu');
+            if (navMenu.classList.contains('hidden')) {
+                navMenu.classList.remove('hidden');
+            } else {
+                navMenu.classList.add('hidden');
+            }
+        }
+
+        // Fonction pour afficher le PopUp de Bienvenue
+        function showWelcomePopup() {
+            const popup = document.getElementById('welcome-popup');
+            popup.style.display = 'flex'; // Affiche le PopUp
+
+            // Masque le PopUp après 5 secondes
+            setTimeout(function() {
+                popup.style.display = 'none';
+            }, 5000);
+        }
+
+        // Appelle la fonction lorsque la page est complètement chargée
+        window.onload = showWelcomePopup;
+    </script>
+
+</body>
+</html>
 
     <!-- Home Section -->
 <section id="home" class="h-screen relative">
